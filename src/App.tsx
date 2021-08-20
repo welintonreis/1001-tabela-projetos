@@ -1,11 +1,13 @@
-import React, { Fragment } from "react";
+// eslint-disable-next-line no-use-before-define
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-function App() {
-  return (
-    <Fragment>
-      <h1>Starting...</h1>
-    </Fragment>
-  );
-}
+import Routes from './routes';
+
+const App: React.FC = () => (
+  <BrowserRouter>
+    <Routes />
+  </BrowserRouter>
+);
 
 export default App;
